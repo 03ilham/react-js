@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <input id="myName" value="codeid"/>
+        <button id="btn1">Click Me!</button>
+        <button id="btn2">JQUERY</button>
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.main.js"></script>
+    <script> type="text/javascript">
+        document.getElementById("btn1").addEventListener("click",
+        (e)=> {
+           const x = document.getElementById("myName");
+           alert(x.value);
+        });
+
+        $("#btn2").click(()=>{
+            const v = $("#myName").val();
+            alert(v);
+        });
+    </script>
+</html>
